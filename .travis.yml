@@ -18,3 +18,5 @@ deploy:
     app: dice-on-demand-production
     on:
       branch: main
+notifications:
+  slack: $SLACK_NOTIFICACION_PERSONAL
