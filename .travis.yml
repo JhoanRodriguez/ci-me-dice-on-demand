@@ -10,8 +10,6 @@ script:
 deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
-  run:
-    - "echo \"python-3.8\">>runtime.txt"
   app: dice-on-demand-stage
   on:
     branch: main
