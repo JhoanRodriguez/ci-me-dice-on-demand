@@ -9,7 +9,6 @@ script:
   - python -m pytest -v tests/test_dice.py
 deploy:
   provider: heroku
-  api_key: 
-    secure: "$HEROKU-API-KEY"
-  app: dice-on-demand-stage
-  python: "3.8"
+  api_key: $HEROKU-API-KEY
+  app: dice-on-demand
+  on: dice-on-demand-stage
