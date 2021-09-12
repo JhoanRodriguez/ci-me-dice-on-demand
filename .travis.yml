@@ -1,22 +1,23 @@
 language: python
 python:
-  - "3.8"
+- '3.8'
 before_install:
-  - python -m pip install --upgrade pip
+- python -m pip install --upgrade pip
 install:
-  - pip install -r requirements.txt --use-feature=2020-resolver
-script: 
-  - python -m pytest -v tests/test_dice.py
+- pip install -r requirements.txt --use-feature=2020-resolver
+script:
+- python -m pytest -v tests/test_dice.py
 deploy:
-  - provider: heroku
-    api_key: $HEROKU_API_KEY
-    app: dice-on-demand-stage
-    on:
-      branch: main
-  - provider: heroku
-    api_key: $HEROKU_API_KEY
-    app: dice-on-demand-production
-    on:
-      branch: main
+- provider: heroku
+  api_key: "$HEROKU_API_KEY"
+  app: dice-on-demand-stage
+  on:
+    branch: main
+- provider: heroku
+  api_key: "$HEROKU_API_KEY"
+  app: dice-on-demand-production
+  on:
+    branch: main
 notifications:
-  slack: psl-techtalks:YTtXdf7QhHMFq4IJZtLpxRBk
+  slack:
+    secure: H5Dp5Ispl5EV5TLLEd/J41kJxTFcXpfM6AQDdM8kRXunfKtzwbFp4clTDmiVGNbhxOom5KPj7KFvwrtkosXT/cg6Hx8toczzSM3fcLCGRcFAvF1WNnblSJ3kTf2/ut17BmqvKERiU9mknPxv1eLEbdGb+82uT1efFJk115yDx2dg7J8xbek0BQrTX4leltkSVQWqdO9xefFxU9wIdkCyhWbo+c1XGqjSqi1bQyAhwtYsLFuJ2/w0cjQ0iKBLt75nvvRAEAZQNtOT8+1xYKM4ZlSmfk0v14QCtIVmR6jksm8eytlIFmT0BEZbY5Q4AlFFIDgh1EEJjBCAdmZGOzk2hFZI7CiqTwkPcClMc+tVKizvE9affk70SB20RM7tGgZw8tTTWUYXbvxMhVcVz6TY6qZGMhshJDdnSQLnMvBF59Gfu+RWQmLMPdd1qLjyGYnrRu5FRBG5jJuabx1LvgrTrZqBiI9Y7HWWeKXDckNira2JV8MRgCxP0fYsg90SGpCPyL86j0GPmONBgCTIRYsm64ZHlSbDL6/rAz/yZolOXIdcUW88SqdWpoSDXzXe6G66dUCbWRKeaJEkhEtfFVU27133p/YHl8FRr+yVTsnFP+eSsd+8OZxH0RvZvWkcc2RttCspWG7jqryDHWuleEIjTPyPdqdq6DZZ0Ar63fd/m18=
