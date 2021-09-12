@@ -7,3 +7,8 @@ install:
   - pip install -r requirements.txt --use-feature=2020-resolver
 script: 
   - python -m pytest -v tests/test_dice.py
+deploy:
+  provider: heroku
+  api_key: 
+    secure: $HEROKU-API-KEY
+  app: dice-on-demand-stage
