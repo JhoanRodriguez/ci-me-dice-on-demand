@@ -13,4 +13,4 @@ deploy:
   app: dice-on-demand-stage
   on:
     branch: main
-    python: "3.8"
+  python: "3.8"
