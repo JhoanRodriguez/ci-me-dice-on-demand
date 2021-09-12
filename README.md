@@ -1,4 +1,6 @@
-# ci-me-dice-on-demand
+
+# ci-me-dice-on-demand [![Build Status](https://app.travis-ci.com/JhoanRodriguez/ci-me-dice-on-demand.svg?branch=main)](https://app.travis-ci.com/JhoanRodriguez/ci-me-dice-on-demand)
+
 
 Sample Python app for learning CI. You will get a flexible dice on demand! 
 
