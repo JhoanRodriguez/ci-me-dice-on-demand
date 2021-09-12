@@ -11,5 +11,6 @@ deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
   app: dice-on-demand
-  on: dice-on-demand-stage
+  on:
     branch: main
+    python: "3.8"
