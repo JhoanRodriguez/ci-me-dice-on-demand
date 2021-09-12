@@ -19,4 +19,4 @@ deploy:
     on:
       branch: main
 notifications:
-  slack: $SLACK_NOTIFICACION_PERSONAL
+  slack: psl-techtalks:YTtXdf7QhHMFq4IJZtLpxRBk
